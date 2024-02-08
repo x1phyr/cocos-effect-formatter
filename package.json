@@ -20,7 +20,7 @@
         "url": "https://github.com/x1phyr/cocos-effect-formatter"
     },
     "activationEvents": [
-        "onLanguage:cocos-effect"
+        "onLanguage"
     ],
     "main": "./out/extension.js",
     "contributes": {
@@ -33,12 +33,6 @@
                 "extensions": [
                     "effect"
                 ]
-            }
-        ],
-        "configuration": [
-            {
-                "title": "",
-                "properties": {}
             }
         ]
     },
