@@ -9,8 +9,18 @@
     "categories": [
         "Formatters"
     ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/x1phyr/cocos-effect-formatter/issues",
+        "email": "martinae@microsoft.com"
+    },
+    "homepage": "https://github.com/x1phyr/cocos-effect-formatter/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/x1phyr/cocos-effect-formatter"
+    },
     "activationEvents": [
-        "onLanguage"
+        "onLanguage:cocos-effect"
     ],
     "main": "./out/extension.js",
     "contributes": {
@@ -25,7 +35,7 @@
                 ]
             }
         ],
-        "configuration":[
+        "configuration": [
             {
                 "title": "",
                 "properties": {}
