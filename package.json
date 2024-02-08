@@ -53,6 +53,7 @@
     "devDependencies": {
         "@types/mocha": "^10.0.6",
         "@types/node": "18.x",
+        "@types/prettier": "^2.7.2",
         "@types/vscode": "^1.86.0",
         "@typescript-eslint/eslint-plugin": "^6.19.1",
         "@typescript-eslint/parser": "^6.19.1",
@@ -62,6 +63,6 @@
         "typescript": "^5.3.3"
     },
     "dependencies": {
-        "prettier": "^3.2.5"
+        "prettier": "^2.8.8"
     }
 }

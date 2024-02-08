@@ -24,9 +24,7 @@ export class YAMLFormatter implements vscode.DocumentRangeFormattingEditProvider
                 proseWrap: 'always' === options.proseWrap ? 'always' : 'never' === options.proseWrap ? 'never' : 'preserve',
             };
 
-            return prettier.format(text, prettierOptions).then(formatted => {
-                return [vscode.TextEdit.replace(range, formatted)];
-            });
+            return Promise.resolve([vscode.TextEdit.replace(range, prettier.format(text, prettierOptions))]);
         } catch (error) {
             return Promise.resolve([]);
         }
