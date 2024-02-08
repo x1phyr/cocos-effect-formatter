@@ -3,6 +3,7 @@
     "displayName": "Cocos Effect Formatter",
     "description": "formatting cocos creator effect file",
     "version": "0.0.1",
+    "publisher": "x1phyr",
     "engines": {
         "vscode": "^1.86.0"
     },
