@@ -4,6 +4,9 @@ All notable changes to the "cocos-effect-formatter" extension will be documented
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [0.0.2] - 2024.7.18
 
-- Initial release
+### Added
+
+- optional indentation option in CCProgram body, at setting `Cocos Effect Formatter: Use Cocos Program Indent`.
+
