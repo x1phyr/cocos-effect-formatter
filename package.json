@@ -35,7 +35,16 @@
                     "effect"
                 ]
             }
-        ]
+        ],
+        "configuration": {
+            "title": "Cocos Effect Formatter",
+            "properties": {
+                "cocosEffectFormatter.useCocosProgramIndent": {
+                    "type": "boolean",
+                    "default": false
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
