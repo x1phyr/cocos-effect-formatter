@@ -2,7 +2,7 @@
     "name": "cocos-effect-formatter",
     "displayName": "Cocos Effect Formatter",
     "description": "formatting cocos creator effect file",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "x1phyr",
     "engines": {
         "vscode": "^1.86.0"
@@ -35,7 +35,16 @@
                     "effect"
                 ]
             }
-        ]
+        ],
+        "configuration": {
+            "title": "Cocos Effect Formatter",
+            "properties": {
+                "cocosEffectFormatter.useCocosProgramIndent": {
+                    "type": "boolean",
+                    "default": false
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",

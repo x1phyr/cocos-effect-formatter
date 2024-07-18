@@ -52,9 +52,9 @@ export default class GlslFormatProvider implements vscode.DocumentRangeFormattin
             text += splitted.shift() + (comments ? (comments.shift() || '') : '');
         }
         // indent blocks
-        const lines = text.split('\n');
+        let lines = text.split('\n');
         let i = 0;
-        text = lines.map(l => {
+        lines = lines.map(l => {
             if (/^\s*\/\//g.test(l)) {
                 l = l.replace(/^\s*\/\//g, "//");
                 if (i > 0) {
@@ -82,7 +82,12 @@ export default class GlslFormatProvider implements vscode.DocumentRangeFormattin
             f = (l.match(/#else.*/g) || []).length;
             i += (a + b + c + d + e + f);
             return l;
-        }).join('\n');
+        });
+        const userCCProgramIndent = vscode.workspace.getConfiguration('cocosEffectFormatter').get('useCocosProgramIndent');
+        if (userCCProgramIndent) {
+            lines = lines.map(ele => ele == '' ? ele : (tab + ele));
+        }
+        text = lines.join('\n');
         return [vscode.TextEdit.replace(range, text)];
     }
 
