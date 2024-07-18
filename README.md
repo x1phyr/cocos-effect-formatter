@@ -10,7 +10,7 @@ formatting cocos creator effect file.
 
 make it work!
 
-### 0.0.2
+### 0.0.2 & 0.0.3
 
 optional indentation option in CCProgram body, see this [issue#1](https://github.com/x1phyr/cocos-effect-formatter/issues/1)
 
